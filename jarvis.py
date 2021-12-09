@@ -1,5 +1,5 @@
-import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speechRecognition
+import pyttsx3 
+import sr 
 import datetime
 import wikipedia #pip install wikipedia
 import webbrowser
@@ -54,7 +54,7 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('timeup918273645@gmail.com', 'your-password')
+    server.login('youremail@gmail.com', 'your-password')
     server.sendmail('youremail@gmail.com', to, content)
     server.close()
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
 
         elif 'play music' in query:
-            music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
+            music_dir = 'c:\\Music\\songs'
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -94,5 +94,5 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
