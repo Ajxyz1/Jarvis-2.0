@@ -1,7 +1,7 @@
 import pyttsx3 
 import sr 
 import datetime
-import wikipedia #pip install wikipedia
+import wikipedia 
 import webbrowser
 import os
 import smtplib
