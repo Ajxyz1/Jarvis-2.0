@@ -3,7 +3,8 @@ Offline assistant for work with speech command feature.
 ###Modules to be installed for project --->
 1-pyttsx3 (py -m pip install pyttsx3)
 2-sr(py -m pip install sr)
-3-wikipedia (py -m pip install wikipedia)
+3-wikipedia (py -m pip install wikipedia).
+This program is capable of doing things like sending mails,playing songs,bring information from the Wikipedia etc.
 
 
 
