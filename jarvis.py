@@ -8,7 +8,7 @@ import smtplib
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-# print(voices[1].id)
+
 engine.setProperty('voice', voices[0].id)
 
 
@@ -31,7 +31,7 @@ def wishMe():
     speak("I am Jarvis Sir. Please tell me how may I help you")       
 
 def takeCommand():
-    #It takes microphone input from the user and returns string output
+    
 
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -45,7 +45,7 @@ def takeCommand():
         print(f"User said: {query}\n")
 
     except Exception as e:
-        # print(e)    
+        
         print("Say that again please...")  
         return "None"
     return query
@@ -61,10 +61,8 @@ def sendEmail(to, content):
 if __name__ == "__main__":
     wishMe()
     while True:
-    # if 1:
         query = takeCommand().lower()
 
-        # Logic for executing tasks based on query
         if 'wikipedia' in query:
             speak('Searching Wikipedia...')
             query = query.replace("wikipedia", "")
